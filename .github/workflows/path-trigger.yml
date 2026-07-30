@@ -6,14 +6,14 @@ on: [workflow_dispatch]
 #     paths:
 #       - 'src/**'   #  srcディレクトリ配下に変更があった時のみ起動する
 
-# jobs:
-#   path-job:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: リポジトリのチェックアウト
-#         uses: actions/checkout@v4
+jobs:
+  path-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v4
 
-#       - name: srcディレクトリ内のファイル確認
-#         run: |
-#           echo "=== src/sample.txt の中身を出力します ==="
-#           cat src/sample.txt
+      - name: srcディレクトリ内のファイル確認
+        run: |
+          echo "=== src/sample.txt の中身を出力します ==="
+          cat src/sample.txt
